@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import ClockDisplay from "./ClockDisplay";
 
 class LockScreen extends Component {
   render() {
     return (
-      <div className="LockScreen"></div>
+      <div className="LockScreen">
+        <ClockDisplay />
+      </div>
     );
   }
 }

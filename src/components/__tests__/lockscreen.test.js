@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
 import LockScreen from '../LockScreen';
-import ClockDisplay from "./ClockDisplay";
+import ClockDisplay from '../ClockDisplay';
 
 it('renders only Lockscreen without crashing', () => {
   shallow(<LockScreen />);
