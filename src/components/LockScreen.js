@@ -4,7 +4,7 @@ import ClockDisplay from "./ClockDisplay";
 class LockScreen extends Component {
   render() {
     return (
-      <div className="LockScreen"
+      <div className="lockscreen"
         style={{
           height: "100%",
           display: "flex",
@@ -13,7 +13,9 @@ class LockScreen extends Component {
           backgroundColor: "black",
           backgroundPosition: "center",
           backgroundSize: "cover",
-        }}>
+        }}
+      >
+
         <ClockDisplay />
       </div>
     );

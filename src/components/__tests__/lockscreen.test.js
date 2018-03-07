@@ -21,6 +21,7 @@ describe("LockScreen", () => {
 
   beforeEach(() => {
     props = {
+      userInfoMessage: undefined
     };
     mountedLockScreen = undefined;
   });
@@ -30,15 +31,20 @@ describe("LockScreen", () => {
     expect(divs.length).toBeGreaterThan(0);
   });
 
-  // describe("the rendered div", () => {
-  //   it("contains everything else that gets rendered", () => {
-  //     const divs = lockScreen().find("div");
+  describe("the rendered div", () => {
+    fit("contains everything else that gets rendered", () => {
+      
+      debugger
 
-  //     const wrappingDiv = divs.first();
+      const divs = lockScreen().find("div");
+      console.log(divs);
+      const wrappingDiv = divs.first();
+      console.log(wrappingDiv.children());
+      debug;
 
-  //     expect(wrappingDiv.children()).toEqual(lockScreen().children());
-  //   });
-  // });
+      expect(wrappingDiv.children()).toEqual(lockScreen().children());
+    });
+  });
 
   it("always renders a `ClockDisplay`", () => {
     expect(lockScreen().find(ClockDisplay).length).toBe(1);
